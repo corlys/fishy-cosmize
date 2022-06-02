@@ -1,0 +1,25 @@
+specVersion: 0.0.4
+description: Fishing Marketplace Subgraph API
+schema:
+  file: subgraph.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Marketplace
+    network: ropsten
+    source:
+      address: "0x486511d0aDd283fBd7083c02de186bc16ff9bF7f"
+      abi: MarketPlace
+      startBlock: 12319824
+    mapping:
+      kind: ethereum/event
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: Marketplace\Marketplace.wasm
+      entities:
+        - Exchange
+      abis:
+        - name: MarketPlace
+          file: Marketplace\abi\MarketPlace.json
+      eventHandlers:
+        - event: buyEvent(address,address,uint256,uint256,uint256)
+          handler: handleBuyEvent

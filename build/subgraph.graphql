@@ -1,0 +1,22 @@
+type Exchange @entity {
+  # tx hash
+  id: ID!
+
+  # Block number
+  block: BigInt!
+
+  # Buyer
+  buyer: String!
+
+  # Seller
+  seller: String!
+
+  # Token ID
+  tokenId: BigInt!
+
+  # Price
+  price: BigInt!
+
+  # Timestamp
+  timestamp: BigInt!
+}
