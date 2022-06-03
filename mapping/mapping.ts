@@ -1,6 +1,6 @@
 import { BigInt } from "@graphprotocol/graph-ts";
 import { Exchange } from "../generated/schema";
-import { buyEvent } from "../generated/MarketPlace/MarketPlace";
+import { buyEvent } from "../generated/Marketplace/MarketPlace";
 
 const BI_ONE = BigInt.fromI32(1);
 export function handleBuyEvent(event: buyEvent): void {

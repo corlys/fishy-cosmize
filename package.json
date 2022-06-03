@@ -8,7 +8,9 @@
   "license": "MIT",
   "scripts": {
     "codegen": "graph codegen",
-    "deploy": "graph deploy --product hosted-service corlys/fishy-cosmize"
+    "deploy": "graph deploy --product hosted-service corlys/fishy-cosmize",
+    "create-local": "graph create --node http://localhost:8020 corlys/fishy-cosmize",
+    "deploy-local": "graph deploy --node http://localhost:8020 --ipfs http://localhost:5001 corlys/fishy-cosmize"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.30.2",
