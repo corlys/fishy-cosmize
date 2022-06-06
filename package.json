@@ -9,8 +9,8 @@
   "scripts": {
     "codegen": "graph codegen",
     "deploy": "graph deploy --product hosted-service corlys/fishy-cosmize",
-    "create-local": "graph create --node http://localhost:8020 corlys/fishy-cosmize",
-    "deploy-local": "graph deploy --node http://localhost:8020 --ipfs http://localhost:5001 corlys/fishy-cosmize"
+    "create-local": "graph create --node http://34.132.91.192:8020 corlys/fishy-cosmize",
+    "deploy-local": "graph deploy --node http://34.132.91.192:8020 --ipfs http://34.132.91.192:5001 corlys/fishy-cosmize"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.30.2",
