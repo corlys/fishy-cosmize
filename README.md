@@ -7,9 +7,9 @@ Subgraph for the NFT Fishing Marketplace Smart Contract that listens and index e
 ```bash
 yarn install
 
-graph codegen
+yarn create-local
 
-yarn deploy
+yarn deploy-local
 ```
 
 ## Tutorial
